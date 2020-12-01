@@ -13,14 +13,12 @@ export default function TodoForm(props) {
     props.addTodo(e.target[ 0 ].value)
     setFormValues('')
   }
-// console.log('props: ', props)
 
     return (
       <div className='form'>
         <form onSubmit={handleSubmit}>
           <label htmlFor='todo'>
-            <h2>New To-Do</h2>
-             <br />
+            Want to add a New To-Do?  
             <input
               type='text'
               name='todo'
